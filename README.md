@@ -2,8 +2,10 @@
 
 A real-time American Sign Language (ASL) hand gesture detection website built with Python, Flask, and a Keras/TensorFlow deep learning model. The application uses a webcam or file upload to recognize and translate hand signs into text.
 
-![ASL Detection UI](https://i.imgur.com/your-screenshot-url.png)
-*(To add your screenshot: upload an image to your repo or a site like Imgur and replace the URL above)*
+![{534EBD96-D374-4B66-BFF4-C518B55A5050}](https://github.com/user-attachments/assets/53fe185e-051c-409b-a30a-b44b72af33c4)
+![{84466532-3552-485C-A29E-B093F1DE0462}](https://github.com/user-attachments/assets/95e5da61-0c0e-48a4-b94b-9441d13b9bfd)
+
+
 
 ---
 
