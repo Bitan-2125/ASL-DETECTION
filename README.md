@@ -41,7 +41,7 @@ A real-time American Sign Language (ASL) hand gesture detection website built wi
 
 1. **Clone the repository:**
    ```sh
-   git clone https://github.com/your-username/your-repo-name.git
+   git clone https://github.com/bitan-2125/ASL-DETECTION.git
    cd your-repo-name
    ```
 
