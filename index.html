@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>ASL Detection</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <div class="header">ASL Detection</div>
+  <div class="subtitle">Recognize American Sign Language in real-time</div>
+  <div class="main-card">
+    <div class="content-row">
+      <div class="video-card">
+        <div class="video-box" id="video-box">
+          <div class="loading" id="loading-msg">
+            <div class="loader"></div>
+            Loading camera...
+          </div>
+          <video id="video" width="320" height="200" autoplay style="display:none;"></video>
+        </div>
+        <div class="button-row">
+          <button class="modern-btn" id="startBtn"><span>▶️</span> Start Camera</button>
+          <button class="modern-btn secondary" id="stopBtn"><span>⏹️</span> Stop Camera</button>
+        </div>
+      </div>
+      <div class="prediction-card">
+        <div class="prediction-title">Detected Sign</div>
+        <div class="predicted-sign" id="pred-letter">-</div>
+        <div class="sentence-label">Form an ASL hand sign in front of the camera</div>
+      </div>
+    </div>
+    <div class="button-row" style="justify-content:center;">
+      <button class="modern-btn warn" id="clearBtn"><span>🧹</span> Clear Sentence</button>
+    </div>
+    <div class="sentence-label">Sentence: <span id="pred-sentence"></span></div>
+    <div class="upload-section">
+      <div class="upload-label">Or Upload an Image</div>
+      <input type="file" id="imgUpload" accept="image/*">
+      <img id="uploaded-img" class="upload-preview" src="#" alt="Uploaded Image">
+      <div class="upload-prediction" id="upload-prediction"></div>
+    </div>
+  </div>
+  <div class="info-card">
+    <div class="info-title"><span>ℹ️</span> How to use</div>
+    <ol style="margin:0 0 0 1.2em; padding:0;">
+      <li>Click "Start Camera" to enable your webcam</li>
+      <li>Position your hand clearly in the frame</li>
+      <li>Detected sign will appear on the right</li>
+      <li>Or upload an image to get a prediction</li>
+    </ol>
+  </div>
+  <script src="/static/script.js"></script>
+</body>
+</html>
